@@ -27,12 +27,13 @@
 			ajaxFileUpload(archivo.attr('id'), archivo.attr('name'), tamanio_val);
 		}
 	}
-	/* Llamada a la funcion de ajax
-	 * que envia el archivo a traves de json al 
-	 * script doajaxfileupload.php, donde se 
-	 * procesara
+	/* 
+	 * AjaxFileUpload call
+	 * id: input ID 
+	 * name: files[] (multiple files)
+	 * size: max file size
 	 */
-	function ajaxFileUpload(id,name,tamanio){
+	function ajaxFileUpload(id,name,size){
 		$("#loading").ajaxStart(function(){   //loading image
 			$(this).show();
 		})
@@ -59,7 +60,7 @@
 									$('#error').html("<img src='images/cross.png'> Can not check the file by its extension");
 								CleanInputFile(id);
 						}else{
-							if (data.msg > tamanio){
+							if (data.msg > size){
 								CleanInputFile(id);
 								$("#"+id).css("color","red");
 								$('#error').html("<img src='images/cross.png'> File size exceeded");
