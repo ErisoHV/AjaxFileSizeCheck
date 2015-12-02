@@ -1,5 +1,5 @@
 # AjaxFileSizeCheck
-**Check size file using Ajax an JQuery**
+**Check file size using Ajax an JQuery**
 
 Based on [ajaxfileupload plugin](http://www.phpletter.com/Our-Projects/AjaxFileUpload/) by Yvind Saltvik
 
