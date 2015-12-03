@@ -1,4 +1,4 @@
-# AjaxFileSizeCheck
+# AjaxFileSizeChecker
 **Check file size using Ajax and JQuery**
 
 Based on [ajaxfileupload plugin](http://www.phpletter.com/Our-Projects/AjaxFileUpload/) by Yvind Saltvik
@@ -9,7 +9,7 @@ Based on [ajaxfileupload plugin](http://www.phpletter.com/Our-Projects/AjaxFileU
 - The file size is checked in the *OnChange* event
 
 **Use**
-- Call `ajaxFileUpload(id,name,size)` in the field OnChange event or/and
+- Call: `ajaxFileUpload(id,name,size)` in the field's OnChange event and/or
 - Modify the `myFileValidator->ajaxFileUpload(id,name,size)` logic:
 
 ```
